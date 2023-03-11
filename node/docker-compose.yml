@@ -9,7 +9,7 @@ services:
       args:
         - UID=${UID}
     image: docker-boilerplate
-    command: npm run start
+    command: sh .docker/scripts/run.sh
     volumes:
       - ./:/home/node/app
 
